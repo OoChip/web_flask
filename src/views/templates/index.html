@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0LPGMLGNK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H0LPGMLGNK');
+    </script>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="it.legalito.co">
+    <meta name="description" content="Abogado de Transito, especialistas en impugnacion de comparendos y fotomultas. Tramites de transtito">
+    <meta name="keywords" content="fotomulta, comparendo, multa, transito, tramite, borrar, bajar, impugnar, tramite, licencia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Legalito.co | Fotomulta ¡NO LA PAGUE IMPUGNELA!</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/logo.png') }}"
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav>
+      <div class="container-fluid d-flex justify-content-center align-items-center">
+        <a href="#">
+          <img class="brand" src="{{ url_for('static', filename='images/logo.svg') }}" width="150px" alt="Logo de la página web">
+        </a>
+      </div>
+      <div class="container-fluid navbar navbar-light navbar-expand-sm">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-toggler-icon-perso"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#servicios">Servicios</a>
+              </li>
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#asesoria">Asesoria</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Consulta Procesos Contravencionales de Transito -->
+    <section class="consulta align-items-stretch">
+      <div class="consulta-principal d-flex flex-column justify-content-center align-items-center">
+
+      <h2>En construccion: aqui prodras verificar, presentado de una manera sencilla y facil de entender, los comparendos y multas de transito que puedas tener.</h1>
+      
+      <div class="input-group flex-nowrap m-2 width-80 gap-2">
+        <select class="form-select mb-3 col-1" aria-label="Default select example">
+          <option selected>CEDULA DE CIUDADANIA</option>
+          <option value="1">CEDULA DE CIUDADANIA</option>
+          <option value="2">TARGETA DE IDENTIDAD</option>
+          <option value="3">CEDULA DE EXTRANGERIA</option>
+          <option value="4">NIT</option>
+          <option value="6">PASAPORTE</option>
+          <option value="7">CARNET DIPLOMATICO</option>
+          <option value="9">CEDULA VENEZOLANA</option>
+          <option value="10">CEDULA ECUATORIANA</option>
+          <option value="11">PPT</option>
+          <option value="0">PLACA</option>
+        </select>
+
+        <input class="form-control mb-3 col-2" type="text" placeholder="Introduzca numero de documento">
+
+        <button type="submit" class="btn btn-primary mb-3 col-1">Consultar</button>
+      
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros seccion-oscura">
+      <div class="contenedor">
+        <p class="seccion-texto" style="text-align: justify;">
+          En Legalito.co, ofrecemos asesoramiento gratuito sobre sus comparendos y multas de tránsito de todo tipo.</br>
+          Estudiamos cada caso individualmente y le informarmos sus opciones para que usted pueda tomar la mejor decisión y solucione sus infracciones de tránsito.<br><br>
+          Brindamos servicios de defensa de comparendos, impugnación de multas y declaratorias de prescripción de multas, así como finalización de procesos coactivos.
+          Somos expertos en fotomultas y comparendo por alcoholemia<br><br>
+          También realizamos trámites de transito como traspasos, registros y levantamientos de prenda, entre otros.
+        </p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Declaratoria de Prescripcion -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div>
+              <i class="bi bi-calendar-x"></i>
+            </div>
+            <div>
+              <p class="servicios-titulo">Solicitud de Prescripcion</p>
+            </div> 
+            <div>
+              <p>Para multas(no importa si fue por fotodeccion o no) con al menos de 3 años desde la fecha del comparendo o desde la fecha del coactivo, se elimina por prescripcion (vencimiento). </p>
+            </div>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Precio $100.000 COP</span>
+              <a href="https://wa.me/573028471029?text=Hola%20legalito.co%20tengo%20una%20multa%20prescrita." style="text-decoration: none;"><i class="bi bi-whatsapp"></i> </a>
+            </div>
+          </div>
+          <!-- Defensa de Comparendo -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div>
+              <i class="bi bi-camera"></i>
+            </div>
+            <div>
+              <p class="servicios-titulo"> Defensa de Comparendo</p>
+            </div> 
+            <div>
+              <p>Para comparendos por fotodeteccion(fotomulta) que no le han impusieron multa, se solicita audiencia al organismo de transito y se realiza la defensa, se obtiene la exoneracion.</p>
+            </div>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Precio $150.000 COP</span>
+              <a href="https://wa.me/573028471029?text=Hola%20legalito.co%20tengo%20un%20comparendo." style="text-decoration: none;"><i class="bi bi-whatsapp"></i> </a>
+            </div>
+          </div>
+          <!-- Impugnacion de Multa -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div>
+              <i class="bi bi-bank"></i>
+            </div>
+            <div>
+              <p class="servicios-titulo">Impugnacion de Multa</p>
+            </div> 
+            <div>
+              <p>Para comparendo por fotodeteccion(fotomulta) que ya le impusieron multa, se impugna la multa con demanda de nulidad, se obtiene la nulidad de la multa. </p>
+            </div>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Precio $200.000 COP</span>
+              <a href="https://wa.me/573028471029?text=Hola%20legalito.co%20tengo%20una%20multa." style="text-decoration: none;"><i class="bi bi-whatsapp"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Blog</h2>
+      <h3 class="seccion-descripcion">Aca encontraras noticias y articulos de interes</h3>
+      <!-- Galeria de blog -->
+      <div class="container text-center blog-contenedor">
+        <div class="row">
+          <!-- Post 1  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto1.png') }}" alt="Post 1 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 1 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post 2  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto2.png') }}" alt="Post 2 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">                  
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 2 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post 3  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto3.png') }}" alt="Post 3 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 3 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post 4  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto4.png') }}" alt="Post 4 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 4 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post 5  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto5.png') }}" alt="Post 5 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 5 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post 6  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="blog">
+              <img src="{{ url_for('static', filename='images/proyecto6.png') }}" alt="Post 6 Titulo">
+              <div class="overlay">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Post 6 Titulo</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="{{ url_for('static', filename='images/logo.svg') }}/assets/images//cliente1.svg" alt="Foto de Gino">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de blog en DesarrolloWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="{{ url_for('static', filename='images/logo.svg') }}/assets/images//cliente2.svg" alt="Foto de Nora">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="{{ url_for('static', filename='images/logo.svg') }}/assets/images//cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Asesoria -->
+    <a id="whatsapp" href="whatsapp://send?phone=573028471029">
+      <section id="asesoria" class="seccion-oscura">
+        <div class="container asesoria">
+          <div class="row d-flex text-center justify-content-center align-items-center" >
+            <div class="asesoria-elem">¡Asesoria gratis!!!</div>
+            <i class="bi bi-whatsapp "></i>
+          </div>
+        </div>
+      </section>
+    </a>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+    
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        
+        <a href="https://web.facebook.com/profile.php?id=100089226835277" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/legalito.co/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        
+        <a href="mailto:legalito.co@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+
+      </div>
+     
+      <div class="derechos-de-autor">IT Legalito.co (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
