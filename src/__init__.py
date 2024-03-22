@@ -1,10 +1,16 @@
 from flask import Flask, render_template, url_for
 from config import Config
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
 #from .database.contact_db import reset_table
 #from .routes import global_scope, api_scope, errors_scope
 
 app = Flask(__name__, static_folder=Config.STATIC_FOLDER, template_folder=Config.TEMPLATE_FOLDER)
 app.config.from_object(Config)
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 from src import controllers, helpers, models, routes, tests, views
 
